@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather chanel</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        color: rgb(26, 100, 214);
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .temp {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 0;
+      }
+      p {
+        letter-spacing: 4px;
+      }
+      div {
+        padding: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        /* margin: 50px; */
+        transition: all 200ms ease-in-out;
+      }
+      div:hover {
+        background-color: rgba(250, 244, 217, 0.767);
+        border-radius: 4px;
+      }
+      .tomorrow {
+        text-align: center;
+      }
+      .saturday {
+        text-align: center;
+      }
+      .sunday {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: auto;
+        background-color: rgb(26, 100, 214);
+        padding: 20px 20px;
+        color: white;
+        border: 1px solid lightslategrey;
+        border-radius: 50px;
+        font-size: 15px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: white;
+        border: 1px solid rgb(26, 100, 214);
+        color: rgb(26, 100, 214);
+      }
+      .firma {
+        color: darkgray;
+        font-size: 18px;
+        font-family: monospace;
+        text-align: center;
+        letter-spacing: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      &#127780;
+      <br />
+      Currently 21º in Tokyo
+    </h1>
+    <p class="temp">13º / <strong>23º</strong></p>
+    <div class="tomorrow">
+      <h3><span>&#127783;</span>Tomorrow</h3>
+      <p>10º / 22º</p>
+    </div>
+    <div class="saturday">
+      <h3><span>&#9925;</span>Saturday</h3>
+      <p>15º / 17º</p>
+    </div>
+    <div class="sunday">
+      <h3><span>&#127774;</span>Sunday</h3>
+      <p>25º / 28º</p>
+    </div>
+    <button>Change city</button>
+    <p class="firma">Coded by achucarrob</p>
+  </body>
+</html>
