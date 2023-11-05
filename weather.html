@@ -87,5 +87,26 @@
     </div>
     <button>Change city</button>
     <p class="firma">Coded by achucarrob</p>
+    <!-- Homework2 Adding Javascript interactions -->
+    <script>
+      function changeCity() {
+        const cityName = prompt("In which city are you located?");
+        const temperature = prompt("What is the temperature?");
+
+        if (temperature <= 0) {
+          const h1 = document.querySelector("h1");
+          h1.innerHTML =
+            "&#128543; <br /> Currently " + temperature + "º in " + cityName;
+        } else {
+          const h1 = document.querySelector("h1");
+          h1.innerHTML =
+            "&#128516; <br /> Currently " + temperature + "º in " + cityName;
+        }
+      }
+
+      const changeCityButton = document.querySelector("button");
+
+      changeCityButton.addEventListener("click", changeCity);
+    </script>
   </body>
 </html>
