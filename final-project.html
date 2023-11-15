@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(212, 212, 212);
+      }
+      h1 {
+        font-size: 42px;
+        font-family: serif;
+        text-align: center;
+        color: rgb(119, 67, 219);
+      }
+      h2 {
+        font-family: serif;
+        text-align: center;
+        color: rgb(195, 172, 208);
+      }
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 4px;
+      }
+      div {
+        max-width: 500px;
+        display: block;
+        margin: auto;
+      }
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        font-family: serif;
+        background-color: rgb(119, 67, 219);
+        padding: 20px 20px;
+        color: white;
+        border: 1px solid lightslategrey;
+        border-radius: 50px;
+        font-size: 15px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: white;
+        border: 1px solid rgb(119, 67, 219);
+        color: rgb(119, 67, 219);
+      }
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-family: serif;
+      }
+      .description {
+        font-family: serif;
+        font-size: 24px;
+      }
+      .signature {
+        color: rgb(94, 94, 94);
+        font-size: 14px;
+        font-family: serif;
+        text-align: center;
+        letter-spacing: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Marceline</h1>
+      <h2>Vampire Queen</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/015/original/marceline-jam.jpg?1699996221"
+        width="480"
+        height="320"
+        alt="Marceline Jamming"
+      />
+      <hr />
+      <p class="description">
+        Marceline is a fun-loving and playful <em>1,000-year-old</em> vampire
+        queen. Unlike a traditional vampire,
+        <strong> Marceline does not need to drink blood to survive</strong>;
+        rather, she consumes <em>the color red</em>, or other similar tints.
+        Marceline is also an avid musician who plays an electric bass guitar,
+        which <em>she crafted</em>
+        from her family's heirloom battle-axe.
+      </p>
+      <span>
+        <a
+          href="https://www.youtube.com/watch?v=h28xpNvW9Yw&ab_channel=CartoonNetwork"
+          >Listen here</a
+        >
+        to my favorite song!
+      </span>
+      <button>Let's meet!</button>
+      <p class="signature">This was made by achucarrob</p>
+    </div>
+    <!--let, if, else, alert, prompt, event-->
+    <script>
+      function greeting() {
+        let userName = prompt("let us know what you would like us to call you");
+
+        if (userName.includes("a")) {
+          alert("Have a great day " + userName + "!");
+        } else {
+          alert("See you arround " + userName + "!");
+        }
+      }
+
+      const meetMeButton = document.querySelector("button");
+
+      meetMeButton.addEventListener("click", greeting);
+    </script>
+  </body>
+</html>
