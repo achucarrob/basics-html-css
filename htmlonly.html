@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
     <!-- Contener grande que me va alejar de los bordes de la pagina -->
@@ -46,7 +55,7 @@
           </div>
         </main>
         <div class="weatherforecast">
-          <lu>
+          <ul>
             <li>
               <p class="dayoftheweek">Sat</p>
               <p class="emoji">&#9925;</p>
@@ -72,11 +81,11 @@
               <p class="emoji">&#9928;</p>
               <p class="temperaturadeldia"><strong>34º</strong> 25º</p>
             </li>
-          </lu>
-          <footer>
-            This project was created for achucarrob and a lot of caffeine
-          </footer>
+          </ul>
         </div>
+        <footer>
+          This project was created for achucarrob and a lot of caffeine
+        </footer>
       </div>
     </div>
   </body>
